@@ -101,7 +101,8 @@ class LearningAgent(Agent):
         self.next_waypoint = self.planner.next_waypoint()
         if self.learning:
             action = random.choice(self.valid_actions)
-
+        else:
+            action = random.choice(self.valid_actions)
         ########### 
         ## TO DO ##
         ###########
